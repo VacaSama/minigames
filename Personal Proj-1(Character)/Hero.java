@@ -6,7 +6,7 @@ public class Hero extends Character {
     
     
     public Hero(String name) {
-        super(name, 100, 20); // HINT: Set Hero's health & attack.
+        super(name, 100, 20); // Set Hero's health & attack.
  
     }
 
