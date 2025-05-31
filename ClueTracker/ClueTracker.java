@@ -11,9 +11,7 @@ Good Luck, Detective.
 import java.util.*;
 
 public class ClueTracker { 
-   /** 
-   JAVADOC HERE
-   */
+
    public static void main(String[] args) { 
       // this is where we will test/ run our program 
       ArrayList<String> suspects = new ArrayList<>();
@@ -51,7 +49,8 @@ public class ClueTracker {
       accuse(suspects, actualMurderer);
    }
    /** 
-   JAVADOC HERE 
+   This is where the investigation first takes place and we become a little bit more personal with the user, 
+   a prompt takes place and we have a separate method pause(), that is called to implement the Thread.sleep(), that also gives myself           practice with try/catch .
    */
    public static void startInvestigation() { 
       //this is where we begin. 
@@ -92,7 +91,7 @@ public class ClueTracker {
       }
    }
    /** 
-   @param ArrayList<String> evidenceList
+   @param ArrayList<String> evidenceList, gatherEvidence() adds evidence found at the scene and prints it out. evidenceList is needed to be     passed through but other methods need it as well
    */
    public static void gatherEvidence(ArrayList<String> evidenceList) { // needs parameters
    // what was found at the crime scene, NOTE: we don't need to add a new arraylist because one is already being passed :)
