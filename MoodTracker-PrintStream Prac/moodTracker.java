@@ -1,9 +1,13 @@
 // Author : Kourtnie M
-//
+// I alwasy forget to put stuff in here. I am working on getting better at JavaDoc.. Even though this isn't one but I am still 
+// learning.
 
 import java.util.*; 
 import java.io.*;
-
+/** This however is a JavaDoc 
+ Here i have a moodTracker Program that allows you to basically journal in one spot and 
+ make a text file of everything that you've written. Once you type in "exit" it should save to the file. 
+*/
 public class moodTracker { 
     public static Scanner journal = new Scanner(System.in); 
     
@@ -12,7 +16,10 @@ public class moodTracker {
         introToMoody();
         journalWithMoody();
     }  
-    
+    /** JAVADOC
+    Method: introToMoody() -- this is the into prompt just telling the user what this program is 
+    for and instructions on how to use it
+    */
     public static void introToMoody() { 
         System.out.println("Hiya! Welcome to Moody!");
         System.out.println("Sometimes we have issues recalling or managing emotions,");
@@ -21,6 +28,10 @@ public class moodTracker {
         System.out.println("Let's start with a date,");
         System.out.println("then how you're feeling, and finally a note if you like");     
     }
+    /** JAVADOC
+    Method: journalWithMoody() -- this is the structure to everything and how the printStream gets sent to the 
+    txt file or notepad.. what have you :) 
+    */
     
     public static void journalWithMoody() {  
         try (PrintStream entry = new PrintStream("journalEntry.txt")) { 
